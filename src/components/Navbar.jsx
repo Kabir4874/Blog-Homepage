@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          {/* Desktop Search - Hidden on mobile */}
+          {/* Desktop Search */}
           <div className="hidden lg:block relative">
             <input
               type="text"
