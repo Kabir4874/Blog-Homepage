@@ -31,7 +31,7 @@ const Header = () => {
         </div>
 
         {/* Right part  */}
-        <div className="lg:flex lg:flex-col lg:justify-between gap-6 lg:gap-0">
+        <div className="lg:flex lg:flex-col lg:justify-between gap-6 lg:gap-0 hidden lg:block">
           <div className="border-b border-t lg:border-t-0 pt-4 lg:pt-0 pb-6 border-gray-400">
             <Tag
               icon={<BsFileBarGraph size={16} />}

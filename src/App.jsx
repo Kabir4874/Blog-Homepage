@@ -1,5 +1,9 @@
+import Category from "./components/Category";
+import EditorsPick from "./components/EditorsPick";
 import Header from "./components/Header";
+import LatestNews from "./components/LatestNews";
 import Navbar from "./components/Navbar";
+import Technology from "./components/Technology";
 
 const App = () => {
   return (
@@ -7,6 +11,12 @@ const App = () => {
       <div className=" max-w-[1440px] mx-auto">
         <Navbar />
         <Header />
+        <Category />
+        <EditorsPick />
+      </div>
+      <LatestNews />
+      <div className=" max-w-[1440px] mx-auto">
+        <Technology />
       </div>
     </div>
   );
