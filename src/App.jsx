@@ -1,6 +1,7 @@
 import Advertise from "./components/Advertise";
 import Category from "./components/Category";
 import EditorsPick from "./components/EditorsPick";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import LatestNews from "./components/LatestNews";
 import Navbar from "./components/Navbar";
@@ -10,7 +11,7 @@ import Technology from "./components/Technology";
 
 const App = () => {
   return (
-    <div>
+    <>
       <div className=" max-w-[1440px] mx-auto">
         <Navbar />
         <Header />
@@ -24,7 +25,8 @@ const App = () => {
         <Team />
         <Podcast />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
