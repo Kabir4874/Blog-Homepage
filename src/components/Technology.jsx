@@ -1,3 +1,4 @@
+import { FaArrowRightLong } from "react-icons/fa6";
 import Article1 from "../assets/article1.png";
 import Article4 from "../assets/article4.png";
 import Article6 from "../assets/article6.png";
@@ -13,12 +14,10 @@ const Technology = () => {
           <h2 className="text-xl lg:text-2xl font-bold text-black uppercase">
             Technology
           </h2>
-          <a
-            href="#"
-            className="text-black text-sm font-medium hover:underline"
-          >
-            VIEW ALL &rarr;
-          </a>
+          <div className="text-black text-sm font-medium flex items-center gap-2 group cursor-pointer">
+            <p>VIEW ALL</p>
+            <FaArrowRightLong className="relative right-0 group-hover:right-[-8px] transition-all duration-300 ease-in-out" />
+          </div>
         </div>
 
         {/* Grid of news articles */}
@@ -106,7 +105,7 @@ const Technology = () => {
               alt="Article"
               className="w-full h-full object-cover rounded-md"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 rounded-b-md"></div>
             <div className="absolute inset-0 flex flex-col justify-end p-4 lg:p-6">
               <p className="text-sm text-white mt-2">Jan 25, 2025</p>
               <h3 className="text-xl lg:text-2xl font-semibold text-white">

@@ -1,3 +1,4 @@
+import { FaArrowRightLong } from "react-icons/fa6";
 import Article1 from "../assets/article1.png";
 import Article2 from "../assets/article2.png";
 import Article3 from "../assets/article3.png";
@@ -31,12 +32,10 @@ const LatestNews = () => {
       <div className="max-w-[1440px] mx-auto">
         <div className="flex justify-between items-center mb-6 pt-16">
           <h2 className="text-2xl font-bold text-black">LATEST NEWS</h2>
-          <a
-            href="#"
-            className="text-black text-sm font-medium hover:underline"
-          >
-            VIEW ALL &rarr;
-          </a>
+          <div className="text-black text-sm font-medium flex items-center gap-2 group cursor-pointer">
+            <p>VIEW ALL</p>
+            <FaArrowRightLong className="relative right-0 group-hover:right-[-8px] transition-all duration-300 ease-in-out" />
+          </div>
         </div>
 
         {/* Grid of news articles */}
@@ -84,7 +83,10 @@ const LatestNews = () => {
           {/* Third Column  */}
           <div className="space-y-6 hidden lg:block">
             {newsArticles.map((article, index) => (
-              <div key={index} className="flex flex-col lg:flex-row items-center gap-4">
+              <div
+                key={index}
+                className="flex flex-col lg:flex-row items-center gap-4"
+              >
                 <img
                   src={article.image}
                   alt={article.category}
